@@ -21,10 +21,12 @@
     <body>
         <header class="header">
             <div class="header__section container">
+                
                 <nav class="flex-wrapper">
                     <a href="#" class="logo logo--header">
                         <h3><span class="logo--color">Web</span>Studio</h3></a
                     >
+                    
                     <ul class="header__nav">
                         <li>
                             <a
@@ -49,6 +51,27 @@
                         </li>
                     </ul>
                 </nav>
+                <!--mobile menu-->
+                <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <!--end mobile menu-->
                 <div class="flex-wrapper">
                     <div class="header__contact">
                         <svg
@@ -554,7 +577,23 @@
                 </ul>
             </section>
         </main>
-        <!-- END CLIENTS--><!-- FOOTER-->
+        <!-- END CLIENTS--> <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <!-- FOOTER-->
         <footer class="footer flex-wrapper">
             <div class="flex-wrapper">
                 <div class="flex-column">
@@ -791,6 +830,13 @@
             </div>
         </div>
 
-        <script src="modal.js"></script>
+        <script src="js/modal.js"></script>
+        <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     </body>
 </html>
