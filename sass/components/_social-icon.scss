@@ -1,0 +1,28 @@
+.social-icon {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 30px;
+    transition: background-color $transitionSet;
+    &__space {
+        display: block;
+        padding: 12px;
+        font-size: 0;
+        border-radius: 50%;
+        color: $brandColorGreyIcon;
+        transition: background-color $transitionSet;
+        &:hover,
+        &:focus {
+            background-color: $brandColorBlue;
+        }
+        &:hover {
+            .social-icon__svg {
+                fill: $brandColorWhite;
+            }
+        }
+    }
+    &__svg {
+        fill: currentColor;
+        transition: color $transitionSet;
+    }
+}

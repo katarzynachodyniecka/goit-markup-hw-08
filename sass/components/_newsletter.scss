@@ -1,0 +1,51 @@
+.newsletter {
+    margin-left: 78px;
+    padding-top: 12px;
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__input {
+        width: 358px;
+        font-size: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: transparent;
+        color: $brandColorWhite;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: $borderRadiusDefault;
+        padding: 15px 16px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:active,
+        &:focus {
+            border: 1px solid $brandColorBlue;
+            outline: none;
+        }
+    }
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        background-color: $brandColorBlue;
+        color: $brandColorWhite;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: $borderRadiusDefault;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        cursor: pointer;
+    }
+}

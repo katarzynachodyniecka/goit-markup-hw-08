@@ -1,0 +1,32 @@
+.clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding-top: 50px;
+    }
+
+    &__icon-space {
+        display: block;
+        padding: 16px 32px;
+        border: 1px solid $iconsInactive;
+        border-radius: $borderRadiusDefault;
+        color: $iconsInactive;
+        transition: border $transitionSet;
+        &:hover,
+        &:focus {
+            border: 1px solid $brandColorBlue;
+            color: $brandColorBlue;
+        }
+    }
+
+    &__icon-svg {
+        --color2: currentColor;
+        --color3: currentColor;
+        fill: currentColor;
+        transition: color $transitionSet;
+    }
+}

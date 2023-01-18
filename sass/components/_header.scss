@@ -1,0 +1,89 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 46px;
+        align-items: center;
+    }
+
+    &__links {
+        position: relative;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $brandColorBlack;
+
+        &:hover,
+        &:focus {
+            color: $brandColorBlue;
+            transition: $transitionSet;
+        }
+    }
+
+    &__item:hover,
+    &__item:active,
+    &__item:focus {
+        color: $brandColorBlue;
+    }
+
+    &__blueline::after {
+        content: "";
+        position: absolute;
+        bottom: -34px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $brandColorBlue;
+        pointer-events: none;
+        display: none;
+    }
+
+    &__blueline:hover::after,
+    &__blueline:focus::after {
+        display: block;
+    }
+
+    &__contact:hover,
+    &__contact:focus {
+        color: $brandColorBlue;
+    }
+
+    &__contact-icon {
+        vertical-align: middle;
+        margin-right: 10px;
+        --color4: currentColor;
+    }
+    &__contact-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $brandColorGrey;
+        &:hover {
+            color: $brandColorBlue;
+        }
+        &:focus {
+            color: $brandColorBlue;
+        }
+    }
+
+    &__contact-gap {
+        padding-right: 50px;
+    }
+
+    &__contact-icon-position {
+        vertical-align: text-top;
+    }
+}

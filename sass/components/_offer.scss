@@ -1,0 +1,26 @@
+.offer {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 94px;
+    padding-top: 50px;
+    &__item {
+        position: relative;
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 27px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: $brandColorWhite;
+        font-weight: 700;
+        background-color: $aboutusHeroBackground;
+    }
+}
