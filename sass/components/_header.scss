@@ -70,6 +70,7 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
         text-decoration: none;
+        text-align: center;
         color: $brandColorGrey;
         &:hover {
             color: $brandColorBlue;
@@ -92,7 +93,7 @@
 /* ---------- RESPONSIVE TABLET ---------- */
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
-    .header__nav-item {
+    .header__nav-item:first-child {
         margin-left: 93px;
     }
 
