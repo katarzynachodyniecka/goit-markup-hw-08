@@ -57,3 +57,30 @@
         }
     }
 }
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .newsletter__input {
+        width: 450px;
+    }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .newsletter {
+        margin-left: 78px;
+    }
+
+    .newsletter__form {
+        flex-direction: row;
+    }
+
+    .newsletter__input {
+        width: 358px;
+    }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

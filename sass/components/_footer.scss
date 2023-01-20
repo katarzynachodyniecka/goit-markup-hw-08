@@ -55,3 +55,30 @@
         gap: 10px;
     }
 }
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .footer__container {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .footer__address {
+        margin-bottom: 0;
+    }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

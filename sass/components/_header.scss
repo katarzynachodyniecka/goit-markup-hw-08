@@ -93,6 +93,10 @@
 /* ---------- RESPONSIVE TABLET ---------- */
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .header__nav-item {
+        margin-right: 50px;
+    }
+
     .header__nav-item:first-child {
         margin-left: 93px;
     }
