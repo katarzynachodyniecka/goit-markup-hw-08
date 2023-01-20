@@ -1,8 +1,9 @@
 .offer {
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 94px;
-    padding-top: 50px;
+    display: none;
+    text-align: center;
+    // justify-content: center;
+    // gap: 30px;
+    // padding-top: 50px;
     &__item {
         position: relative;
     }
@@ -22,5 +23,13 @@
         color: $brandColorWhite;
         font-weight: 700;
         background-color: $aboutusHeroBackground;
+    }
+}
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .offer {
+        display: block;
     }
 }

@@ -1,27 +1,23 @@
 .hero {
     background-color: $brandColorDark;
     &__background {
-        display: flex;
-        flex-direction: column;
-        max-width: 1600px;
-        align-items: center;
-        text-align: center;
-        align-content: center;
-        padding: 200px 0;
-        margin: 0 auto;
-        background-image: url(../images/main/hero-bg.jpg),
-            linear-gradient(
-                90deg,
-                rgba(47, 48, 58, 0.4) 0%,
-                rgba(47, 48, 58, 0.4) 0%
-            );
-        background-repeat: no-repeat;
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../../images/main/hero-1600.jpg);
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.6;
         margin-bottom: 30px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -49,5 +45,56 @@
         letter-spacing: 0.06em;
 
         color: $brandColorWhite;
+        cursor: pointer;
     }
 }
+
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../../images/main/hero-1600@2x.jpg);
+    }
+}
+
+@media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    .hero {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../../images/main//hero-1600@3x.jpg);
+    }
+}
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .hero {
+        padding-top: 80px;
+    }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .hero {
+        height: 600px;
+        padding-top: 80px;
+    }
+
+    .hero__title {
+        font-size: 44px;
+        line-height: 1.4;
+    }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */

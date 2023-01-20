@@ -1,22 +1,28 @@
 .article {
-    justify-content: center;
-    gap: 30px;
-    margin: 94px 0px;
-    &__box {
-        width: 270px;
+    padding: 60px 15px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
     }
+
     &__icon-box {
-        padding: 25px 102.34px;
+        padding: 25px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 30px;
         background-color: $brandColorLightgrey;
         border-radius: $borderRadiusDefault;
     }
     &__title {
-        font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: center;
         margin-bottom: 10px;
     }
 
@@ -27,3 +33,35 @@
         color: $brandColorGrey;
     }
 }
+
+/* ---------- RESPONSIVE TABLET ---------- */
+
+@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .article__title {
+        text-align: left;
+    }
+
+    .article__list {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
+
+/* ---------- END RESPONSIVE TABLET ---------- */
+
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .article {
+        padding: 94px 0;
+    }
+
+    .article__list {
+        flex-wrap: nowrap;
+    }
+
+    .article__title {
+        text-align: left;
+    }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */
