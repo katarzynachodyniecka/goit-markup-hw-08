@@ -17,12 +17,8 @@
         font-style: normal;
         letter-spacing: 0.03em;
         color: $brandColorWhite;
-        margin-top: 20px; //-tu nie jestem pewna//
     }
-    &__address-list {
-        padding-left: 0px;
-        padding-top: 20px;
-    }
+
     &__contact-link {
         font-weight: 500;
         font-size: 14px;
@@ -71,9 +67,14 @@
 /* ---------- RESPONSIVE DESKTOP ---------- */
 
 @media screen and (min-width: $breakpointDesktopStart) {
+    .footer {
+        padding-bottom: 0;
+    }
     .footer__container {
         flex-direction: row;
         text-align: left;
+        align-items: baseline;
+        justify-content: space-between;
     }
 
     .footer__address {

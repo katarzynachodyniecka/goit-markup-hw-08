@@ -48,15 +48,9 @@
         align-items: center;
         gap: 24px;
         cursor: pointer;
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: $brandColorWhite;
-            color: $brandColorBlue;
-            fill: $brandColorBlue;
-        }
     }
 }
+
 /* ---------- RESPONSIVE TABLET ---------- */
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
@@ -70,9 +64,9 @@
 /* ---------- RESPONSIVE DESKTOP ---------- */
 
 @media screen and (min-width: $breakpointDesktopStart) {
-    .newsletter {
-        margin-left: 78px;
-    }
+    // .newsletter {
+    //     margin-left: 78px;
+    // }
 
     .newsletter__form {
         flex-direction: row;

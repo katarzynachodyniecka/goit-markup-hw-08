@@ -1,5 +1,5 @@
 .article {
-    padding: 60px 15px;
+    padding: 60px 15px 45px 15px;
 
     &__list {
         display: flex;
@@ -37,6 +37,9 @@
 /* ---------- RESPONSIVE TABLET ---------- */
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+    .article {
+        padding-bottom: 45px;
+    }
     .article__title {
         text-align: left;
     }
@@ -52,7 +55,7 @@
 
 @media screen and (min-width: $breakpointDesktopStart) {
     .article {
-        padding: 94px 0;
+        padding-top: 94px;
     }
 
     .article__list {

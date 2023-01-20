@@ -23,8 +23,10 @@
 
 .modal {
     position: relative;
-    width: 528px;
-    height: 581px;
+    width: calc(100vw - 30px);
+    max-width: 450px;
+    min-height: 581px;
+    // padding: 40px;
     border-radius: $borderRadiusDefault;
     background-color: $brandColorWhite;
     transition: transform 0.6s;
@@ -48,6 +50,7 @@
 
     &__container {
         margin: 40px;
+        justify-content: center;
     }
     &__title {
         font-weight: 700;
@@ -116,7 +119,7 @@
 
     &__form-btn {
         padding: 10px 76px;
-        margin: 30px 120px;
+        margin: 30px auto;
         background-color: $brandColorBlue;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: $borderRadiusDefault;
@@ -126,6 +129,8 @@
         line-height: 2;
         border: none;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
     }
 
     &__form-check {
@@ -159,9 +164,26 @@
 
     &__form-check-label {
         color: $brandColorGreyIcon;
-        font-size: 14px;
+        font-size: 12px;
     }
     &__link {
         color: $brandColorBlue;
     }
 }
+/* ---------- RESPONSIVE DESKTOP ---------- */
+
+@media screen and (min-width: $breakpointDesktopStart) {
+    .modal {
+        max-width: 528px;
+    }
+
+    .modal__check-label {
+        font-size: 14px;
+    }
+
+    .modal__form-btn {
+        margin: 30px 120px;
+    }
+}
+
+/* ---------- END RESPONSIVE DESKTOP ---------- */
