@@ -5,19 +5,21 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
     }
-
+    &__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
     &__icon-space {
-        display: flex;
-        padding: 16px 32px;
+        display: block;
+        padding: 13px;
         border: 1px solid $iconsInactive;
         border-radius: $borderRadiusDefault;
         color: $iconsInactive;
         transition: border $transitionSet;
         justify-content: center;
         align-items: center;
-        flex-basis: calc((100% - 30px) / 2);
+
         transition: border $transitionSet;
         &:hover,
         &:focus {
@@ -35,8 +37,8 @@
 }
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
-    .clients__icon-space {
-        flex-basis: calc((100% - 40px) / 3);
+    .clients__item {
+        flex-basis: calc((100% - 60px) / 3);
     }
 }
 
@@ -53,8 +55,11 @@
         flex-wrap: nowrap;
     }
 
-    .clients__icon-space {
+    .clients__item {
         flex-basis: auto;
+    }
+    .clients__icon-space {
+        padding: 13px 32px;
     }
 }
 

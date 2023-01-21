@@ -84,6 +84,9 @@
     &__item:last-child {
         margin-bottom: 0;
     }
+    &__item:hover {
+        color: $brandColorBlue;
+    }
 
     &__link {
         font-size: 40px;
