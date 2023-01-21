@@ -59,7 +59,7 @@
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
     .footer {
-        padding-bottom: 0;
+        padding-bottom: 60px;
     }
     .footer__container {
         flex-direction: row;
