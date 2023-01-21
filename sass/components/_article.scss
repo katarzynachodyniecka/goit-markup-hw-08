@@ -5,11 +5,11 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 30px;
     }
 
     &__icon-box {
-        padding: 25px 100px;
+        padding: 25px 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -36,16 +36,19 @@
 
 /* ---------- RESPONSIVE TABLET ---------- */
 
-@media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
+@media (1200px > width >= 768px) {
     .article {
         padding-bottom: 45px;
+    }
+    .article__list {
+        flex-direction: row;
     }
     .article__title {
         text-align: left;
     }
 
-    .article__list {
-        flex-basis: calc((100vw - 30px) / 2);
+    .article__box {
+        flex-basis: calc((100% - 30px) / 2);
     }
 }
 
