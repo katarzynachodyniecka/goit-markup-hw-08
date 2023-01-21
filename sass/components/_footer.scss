@@ -9,11 +9,15 @@
         text-align: center;
     }
     &__box {
+        display: flex;
+        flex-direction: column;
         margin-bottom: 60px;
         gap: 30px;
     }
-    // &__address-list {
-    // }
+
+    &__address-item {
+        padding-bottom: 8px;
+    }
     &__address {
         font-size: 14px;
         line-height: 1.71;
@@ -21,7 +25,11 @@
         letter-spacing: 0.03em;
         color: $brandColorWhite;
     }
-
+    &__address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
     &__contact-link {
         font-weight: 500;
         font-size: 14px;
