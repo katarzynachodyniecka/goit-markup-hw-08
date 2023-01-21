@@ -26,6 +26,10 @@
         justify-content: center;
     }
 
+    &__photo-size {
+        max-width: 100%;
+    }
+
     &__person-name {
         font-weight: 500;
         font-size: 16px;
@@ -63,9 +67,10 @@
 
     .team__container {
         flex-wrap: nowrap;
-        max-width: 1200px;
     }
-
+    .team__photo {
+        max-width: 100%;
+    }
     .team__person-position {
         margin-bottom: 30px;
     }
