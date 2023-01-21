@@ -17,25 +17,25 @@
         <header class="header">
             <div class="header__section container">
                 <nav class="flex-wrapper">
-                    <a href="index.html" class="logo logo--header">
+                    <a href="#" class="logo logo--header">
                         <h3><span class="logo--color">Web</span>Studio</h3></a
                     >
                     <ul class="header__nav">
-                        <li>
+                        <li class="header__nav-item">
                             <a
-                                href="index.html"
+                                href="#agencja"
                                 class="header__links header__item header__blueline"
                                 >Agencja</a
                             >
                         </li>
-                        <li>
+                        <li class="header__nav-item">
                             <a
                                 href="portfolio.html"
                                 class="header__links header__item header__blueline"
                                 >Portfolio</a
                             >
                         </li>
-                        <li>
+                        <li class="header__nav-item">
                             <a
                                 href="#kontakt"
                                 class="header__links header__item header__blueline"
@@ -44,8 +44,8 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="flex-wrapper">
-                    <div class="header__contact">
+                <ul class="header__contact">
+                    <li class="header__contact-item">
                         <svg
                             width="16"
                             height="12"
@@ -60,8 +60,8 @@
                             class="header__contact-link header__contact-gap"
                             >info@devstudio.com</a
                         >
-                    </div>
-                    <div class="header__contact">
+                    </li>
+                    <li class="header__contact-item">
                         <svg
                             width="10"
                             height="16"
@@ -74,11 +74,22 @@
                         <a href="tel:+48111111111" class="header__contact-link"
                             >+48 111 111 111</a
                         >
-                    </div>
-                </div>
+                    </li>
+                </ul>
+                <!------------ MOBILE MENU BUTTON OPEN ------------>
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg class="mobile-menu__icon" width="40" height="40">
+                        <use href="images/main/icons.svg#burger-icon"></use>
+                    </svg>
+                </button>
+                <!------------ END MOBILE MENU BUTTON OPEN ------------>
             </div>
         </header>
-        <main>
+        <main class="container">
             <ul class="filter">
                 <li>
                     <button type="button" class="filter__button">
@@ -327,24 +338,33 @@
                 </ul>
             </section>
         </main>
-        <footer class="footer flex-wrapper">
-            <div class="flex-wrapper">
-                <div class="flex-column">
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__box">
                     <a href="#" class="logo logo--footer"
                         ><h3><span class="logo--color">Web</span>Studio</h3>
                     </a>
-                    <address class="footer__address">
-                        m. Warszawa, Aleje Jerozolimskie 21
-                    </address>
-
-                    <a
-                        href="mail:info@devstudio.com"
-                        class="footer__contact-link"
-                        >info@devstudio.com</a
-                    >
-                    <a href="tel:+48111111111" class="footer__contact-link"
-                        >+48 111 111 111</a
-                    >
+                    <ul class="footer__address-list">
+                        <li class="footer-address-item">
+                            <address class="footer__address">
+                                m. Warszawa, Aleje Jerozolimskie 21
+                            </address>
+                        </li>
+                        <li class="footer-address-item">
+                            <a
+                                href="mail:info@devstudio.com"
+                                class="footer__contact-link"
+                                >info@devstudio.com</a
+                            >
+                        </li>
+                        <li class="footer-address-item">
+                            <a
+                                href="tel:+48111111111"
+                                class="footer__contact-link"
+                                >+48 111 111 111</a
+                            >
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer__joinus-box">
                     <h3 class="footer__joinus-heading">Dołącz do nas</h3>
@@ -439,5 +459,78 @@
                 </div>
             </div>
         </footer>
+        <!---MOBILE MENU -->
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg
+                    class="mobile-menu__icon mobile-menu__icon--close"
+                    width="40"
+                    height="40"
+                >
+                    <use href="./images/main/icons.svg#icon-close-icon"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu__content">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="index.html" class="mobile-menu__link"
+                            >Agencja</a
+                        >
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="portfolio.html" class="mobile-menu__link"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#" class="mobile-menu__link">Kontakt</a>
+                    </li>
+                </ul>
+                <div>
+                    <p class="mobile-menu__tel">
+                        <a href="tel:+48111111111" class="mobile-menu__tel-link"
+                            >+48 111 111 111</a
+                        >
+                    </p>
+                    <p class="mobile-menu__mail">
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="mobile-menu__mail-link"
+                            >info@devstudio.com</a
+                        >
+                    </p>
+                    <ul class="mobile-menu__socials">
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="#"
+                                >Instagram</a
+                            >
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="#"
+                                >Twitter</a
+                            >
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="#"
+                                >Facebook</a
+                            >
+                        </li>
+                        <li class="mobile-menu__socials-item">
+                            <a class="mobile-menu__socials-link" href="#"
+                                >LinkedIn</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="./js/mobile-menu.js"></script>
+        <!--END MOBILE MENU-->
     </body>
 </html>
