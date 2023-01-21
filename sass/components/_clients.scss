@@ -35,6 +35,12 @@
         transition: color $transitionSet;
     }
 }
+@media (width <= 327px) {
+    .clients__list {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 @media screen and (min-width: $breakpointTabletStart) and (max-width: $breakpointTabletEnd) {
     .clients__item {
